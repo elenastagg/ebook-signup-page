@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="eBook Sign-up Page Capsule Technical Test"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      sizes="32x32"
+      href="images/logo.svg"
+    />
+    <title>eBook Sign-Up | Capsule Tech Test</title>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <img id="logo" src="images/logo.svg" alt="logo" />
+      <img
+        id="burger-menu"
+        src="images/burger-menu-icon.svg"
+        alt="burger-menu"
+      />
+      <nav id="nav" class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">Features</li>
+          <li class="nav-item">Customers</li>
+          <li class="nav-item">Pricing</li>
+          <li class="nav-item">About</li>
+          <li class="nav-item">
+            <button class="button">Try for Free</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main" class="main">
+      <section id="intro" class="section">
+        <h1 class="intro-title">Download our wonderful eBook</h1>
+        <section id="intro-authors" class="authors">
+          <p class="authors-item">By</p>
+          <p class="authors-item">
+            <img class="author-pic" src="./images/katia.jpg" alt="author1" />
+            Katia De Juan
+          </p>
+          <p class="authors-item">
+            <img class="author-pic" src="./images/gavin.jpg" alt="author2" />
+            Gavin Williams
+          </p>
+        </section>
+      </section>
+      <figure id="book" class="section">
+        <img
+          class="book-cover"
+          src="./images/ebook-cover.png"
+          alt="book-cover"
+        />
+      </figure>
+      <section id="hero" class="section">
+        <p class="hero-text">
+          Learn how design engineering, an essential discipline to creating
+          great products, brings together form and function while accelerating
+          innovation. Written by industry leaders from Indeed, Mailchimp, The
+          New York Times, and Minted, this book will help you connect design and
+          engineering and work more efficiently as a team.
+        </p>
+        <p class="hero-text italics">
+          Available in epub, PDF, and audiobook formats.
+        </p>
+        <button id="download-button" class="button">Download eBook</button>
+      </section>
+      <section hidden id="modal-container" class="modal-container">
+        <section id="modal" class="modal">
+          <span id="modal-close-button" class="modal-close-button"
+            >&times;</span
+          >
+          <h2 class="modal-header">We need some details</h2>
+          <p class="modal-text">
+            Tell us a little about yourself to download the free e-book! Don’t
+            worry, we never share these details with anyone else.
+          </p>
+          <form action="src/index.js" id="modal-form" class="form">
+            <div class="form-group" id="form-group-first-name">
+              <label
+                class="form-label"
+                id="form-label-first-name"
+                for="first-name"
+              >
+                First name
+              </label>
+              <input
+                type="text"
+                class="form-input"
+                id="first-name-input"
+                name="first-name"
+                placeholder="Bob"
+              />
+            </div>
+            <div class="form-group" id="form-group-last-name">
+              <label class="form-label" for="last-name">Last name</label>
+              <input
+                class="form-input"
+                type="text"
+                id="last-name-input"
+                name="last-name"
+                placeholder="Burger"
+              />
+            </div>
+            <div class="form-group" id="form-group-email">
+              <label class="form-label" for="email">Email address</label>
+              <input
+                class="form-input"
+                type="text"
+                id="email-input"
+                name="email"
+                placeholder="bob@burgers.com"
+              />
+            </div>
+            <div class="button-container">
+              <button type="submit" class="submit button" id="submit">
+                Submit
+              </button>
+              <small class="success-message" id="success-message"
+                >Check your inbox for the download link</small
+              >
+            </div>
+          </form>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
