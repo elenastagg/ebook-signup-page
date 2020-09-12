@@ -32,7 +32,7 @@ p {
   font-weight: 600;
   background: var(--button-color);
 }
-.header {
+#header {
   padding: 2rem;
   /* background-color: orange; */
   display: flex;
@@ -70,6 +70,7 @@ p {
   font-size: 0.875rem;
   color: var(--secondary-font);
   /* background-color: red; */
+  line-height: 1.25rem;
 }
 
 .author-pic {
@@ -89,11 +90,11 @@ p {
 }
 
 #hero {
-  line-height: 180%;
   /* background-color: wheat; */
 }
 
 .hero-text {
+  line-height: 180%;
   margin-bottom: 1.5rem;
 }
 
@@ -107,4 +108,81 @@ p {
   padding: 1.25rem;
   font-size: 1.5rem;
   border-radius: 2rem;
+}
+
+@media only screen and (min-width: 1440px) {
+  #header {
+    padding: 2rem 11.25rem;
+  }
+  .small-button {
+    padding: 0.75rem 1rem;
+    border-radius: 1.25rem;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .nav {
+    display: initial;
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    list-style-type: none;
+    font-weight: 600;
+  }
+
+  .nav-item {
+    padding-right: 2rem;
+  }
+
+  .nav-button {
+    margin-left: 1rem;
+  }
+
+  #main {
+    padding: 10rem 0;
+    margin: auto;
+    max-width: 67.5rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    justify-items: start;
+    align-items: start;
+  }
+
+  #intro {
+    grid-row-end: span 1;
+    grid-column-start: 2;
+  }
+
+  .intro-title {
+    font-size: 3.5rem;
+  }
+
+  #intro-authors {
+    justify-content: flex-start;
+  }
+
+  .authors-item {
+    margin-right: 0.625rem;
+  }
+
+  .hero-text {
+    max-width: 33rem;
+  }
+
+  #download-button {
+    width: initial;
+    padding: 1.25rem 2.5rem;
+  }
+
+  #book {
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column-start: 1;
+    width: 23.4375rem;
+  }
 }
