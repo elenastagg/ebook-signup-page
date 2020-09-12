@@ -1,1 +1,110 @@
-.DS_Store
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+:root {
+  --main-font: #202938;
+  --secondary-font: #4d576b;
+  --input-font: #b2b9c4;
+  --button-color: #444bf7;
+  --button-font: white;
+  --sent-color: #38c983;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  color: var(--main-font);
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+.button {
+  border: none;
+  cursor: pointer;
+  color: var(--button-font);
+  font-weight: 600;
+  background: var(--button-color);
+}
+.header {
+  padding: 2rem;
+  /* background-color: orange; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: none;
+}
+.section {
+  padding-bottom: 2.5rem;
+}
+
+#main {
+  padding: 1rem 1.5rem;
+  /* background-color: violet; */
+}
+
+#intro {
+  /* background-color: yellow; */
+}
+
+.intro-title {
+  font-size: 2.25rem;
+  line-height: 110%;
+  margin: 0;
+  padding-bottom: 1.5rem;
+}
+
+#intro-authors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: var(--secondary-font);
+  /* background-color: red; */
+}
+
+.author-pic {
+  width: 1.75rem;
+  border-radius: 3.125rem;
+}
+
+#book {
+  /* background-color: aquamarine; */
+  margin: 0;
+}
+
+.book-cover {
+  width: 100%;
+  box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.05),
+    0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+#hero {
+  line-height: 180%;
+  /* background-color: wheat; */
+}
+
+.hero-text {
+  margin-bottom: 1.5rem;
+}
+
+.italics {
+  font-style: italic;
+}
+
+#download-button {
+  width: 100%;
+  margin: auto;
+  padding: 1.25rem;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+}

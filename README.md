@@ -12,8 +12,8 @@ Designs hosted in Figma.
 
 # How to use
 
-Open html file in Chrome
-Or check out the [GitHub page](https://elenastagg.github.io/ebook-signup-page/)
+-Open html file in Chrome
+-Or check out the [GitHub page](https://elenastagg.github.io/ebook-signup-page/)
 
 # Plan
 
