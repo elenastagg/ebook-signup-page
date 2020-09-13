@@ -1,0 +1,105 @@
+@media only screen and (min-width: 1080px) {
+  .primary-container {
+    max-width: 67.5rem;
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #main {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    align-items: center;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+  .nav {
+    display: initial;
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    list-style-type: none;
+    font-weight: 600;
+  }
+
+  .nav-item {
+    padding-right: 2rem;
+  }
+
+  .nav-item:last-of-type {
+    padding-right: 0;
+  }
+
+  .nav-button {
+    margin-left: 1rem;
+  }
+
+  #intro {
+    grid-row-end: span 1;
+    grid-column-start: 2;
+  }
+
+  .intro-title {
+    font-size: 3.5rem;
+  }
+
+  .hero-text {
+    max-width: 33rem;
+  }
+
+  #download-button {
+    width: initial;
+    padding: 1.25rem 2.5rem;
+  }
+
+  #book {
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column-start: 1;
+    width: 23.4375rem;
+  }
+
+  #modal-container {
+    align-items: center;
+  }
+
+  #modal {
+    width: 36.5rem;
+    padding: 4rem;
+  }
+
+  .modal-header {
+    font-size: 2rem;
+  }
+
+  .form {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 50% 50%;
+  }
+
+  .form-input {
+    max-width: 36.5rem;
+    width: 80%;
+  }
+  #email-input {
+    width: 90%;
+  }
+  #form-group-email {
+    grid-column-end: span 2;
+  }
+
+  .button-container {
+    grid-column-end: span 2;
+    margin-top: 1.25rem;
+  }
+}

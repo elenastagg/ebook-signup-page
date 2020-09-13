@@ -1,0 +1,111 @@
+#modal-container {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(32, 41, 56, 0.3);
+  justify-content: center;
+  align-items: flex-start;
+}
+#modal {
+  background-color: var(--modal-color);
+  margin: 5rem 0.75rem;
+  width: 20.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 0.3125rem 0.5rem 0 rgba(0, 0, 0, 0.17),
+    0 0.3125rem 0.5rem 0 rgba(0, 0.4375rem, 20, 0.17);
+  position: relative;
+}
+
+.modal-close-button {
+  color: var(--close-button);
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  line-height: 1rem;
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus {
+  color: var(--close-button-hover);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  font-size: 1.5rem;
+  line-height: 110%;
+  padding-bottom: 1rem;
+  margin: 0;
+}
+
+.modal-text {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 160%;
+  color: var(--secondary-font);
+  padding-bottom: 2.3125rem;
+}
+
+.form-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 100%;
+  padding-bottom: 0.25rem;
+}
+
+.form-input {
+  border: 1px solid var(--form-input-color);
+  border-radius: 0.5rem;
+  display: block;
+  width: 85%;
+  padding: 1rem;
+  margin: 0.25rem 0 0.5rem 0;
+  color: var(--secondary-font);
+}
+
+.form-input:-webkit-autofill {
+  color: var(--secondary-font);
+  -webkit-text-fill-color: var(--secondary-font);
+  box-shadow: 0 0 0px 1000px #fff inset;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+
+.form-input[type="text"]:focus {
+  outline: none;
+  border: 1px solid var(--button-color);
+  box-shadow: 0 0 5px var(--form-input-color);
+}
+
+.form-input::placeholder {
+  color: var(--input-font);
+  font-size: 1rem;
+}
+
+.error {
+  border: 1px solid var(--error-color);
+}
+.error::placeholder {
+  color: var(--error-color);
+}
+
+.sent {
+  background: var(--sent-color);
+}
+.sent:hover {
+  background: var(--sent-color);
+}
+
+.success-message {
+  display: none;
+  color: var(--sent-color);
+  font-weight: 500;
+  padding: 0.75rem 0;
+  font-size: inherit;
+  margin: 0;
+}
