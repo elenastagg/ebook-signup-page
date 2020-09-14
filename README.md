@@ -6,7 +6,7 @@ details to receive a link to download the eBook.
 - The form has validation (empty fields only).
 - Buttons & form fields have various states.
 - When form is sent, message appears.
-- The page is responsive.
+- The page is responsive (375px mobile & 1440px desktop) 
 
 Designs hosted in Figma.
 
